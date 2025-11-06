@@ -1,0 +1,26 @@
+header {
+    background-color: var(--background-terciary-color);
+    width: 100%;
+    padding: 2.25rem 1.5rem;
+}
+
+.header-content {
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-desktop {
+    display: none;
+}
+
+.logo-mobile {
+    display: block;
+    width: 68px;
+    height: 64px;
+}
+
+.menu-lista {
+    display: none;
+}
