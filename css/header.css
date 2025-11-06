@@ -2,6 +2,8 @@ header {
     background-color: var(--background-terciary-color);
     width: 100%;
     padding: 2.25rem 1.5rem;
+
+    position: relative;
 }
 
 .header-content {
@@ -23,4 +25,32 @@ header {
 
 .menu-lista {
     display: none;
+}
+
+.menu-lista li {
+    list-style: none;
+    width: 100%;
+}
+
+.menu-lista li a {
+    text-decoration: none;
+    color: var(--text-secondary-color);
+    font-size: 1rem;
+}
+
+#menuToggle {
+    display: none;
+}
+
+#menuToggle:checked ~ .menu-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: var(--background-terciary-color);
 }
