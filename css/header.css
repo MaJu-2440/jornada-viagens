@@ -36,6 +36,7 @@ header {
     text-decoration: none;
     color: var(--text-secondary-color);
     font-size: 1rem;
+    font-weight: var(--menu-text-weight);
 }
 
 #menuToggle {
@@ -53,4 +54,53 @@ header {
     right: 0;
     left: 0;
     background-color: var(--background-terciary-color);
+}
+
+@media screen and (min-width: 768px) {
+    .menu-lista li a {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        padding: 2.5rem 5.5rem;
+    }
+    
+    .header-content {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    .logo-desktop {
+        display: block;
+        height: 68px;
+    }
+
+    .logo-mobile {
+        display: none;
+    }
+
+    .menu-lista {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        padding: 0;
+        position: static;
+        background-color: transparent;
+    }
+
+    .menu-lista li {
+        width: auto;
+    }
+
+    .menu-lista li a:hover {
+        color: var(--accent-primary-color);
+    }
+
+    .menu-icon {
+        display: none;
+    }
 }
