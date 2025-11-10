@@ -1,0 +1,22 @@
+.offers {
+    text-align: center;
+}
+
+.title-container h2 {
+    font-size: 1.75rem;
+    font-weight: var(--title-weight);
+}
+
+.title-container hr {
+    width: 180px;
+    height: 4px;
+    border: none;
+    background-color: var(--accent-primary-color);
+    margin: 16px auto 36px;
+}
+
+@media screen and (min-width: 768px) {
+    .title-container h2 {
+        font-size: 2rem;
+    }
+}
