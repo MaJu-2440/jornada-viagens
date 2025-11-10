@@ -25,3 +25,14 @@
         padding: 5.5rem 3.75rem; 
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .hero-img {
+        background: url(../assets/hero-desktop.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+    .hero h2 {
+        padding: 5.5rem 4.5rem; 
+    }
+}
