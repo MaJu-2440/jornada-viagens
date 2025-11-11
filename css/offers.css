@@ -67,6 +67,22 @@
     line-height: 64px;
 }
 
+.card.japao {
+    background: url(../assets/bg-card-japao.jpg) no-repeat center/cover;
+}
+
+.card.san-andreas {
+    background: url(../assets/bg-card-san-andreas.jpg) no-repeat center/cover;
+}
+
+.card.manaus {
+    background: url(../assets/bg-card-manaus.jpg) no-repeat center/cover;
+}
+
+.card.paraiba {
+    background: url(../assets/bg-card-paraiba.jpg) no-repeat center/cover;
+}
+
 @media screen and (min-width: 768px) {
     .title-container h2 {
         font-size: 2rem;
