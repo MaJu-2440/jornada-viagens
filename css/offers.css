@@ -2,6 +2,14 @@
     text-align: center;
 }
 
+.offers-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 .title-container h2 {
     font-size: 1.75rem;
     font-weight: var(--title-weight);
@@ -18,7 +26,6 @@
 .card {
     width: 312px;
     height: 288px;
-    margin: 0 auto;
     border-radius: 16px;
     background-color: black;
     color: var(--text-secondary-color);
