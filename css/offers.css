@@ -15,6 +15,39 @@
     margin: 16px auto 36px;
 }
 
+.card {
+    width: 312px;
+    height: 288px;
+    margin: 0 auto;
+    border-radius: 16px;
+    background-color: black;
+    color: var(--text-secondary-color);
+    box-sizing: border-box;
+    padding: 2.5rem 1rem;
+}
+
+.card header {
+    display: block;
+    background: transparent;
+}
+
+.card header p {
+    font-size: 1.25rem;
+    font-weight: var(--text-weight);
+}
+
+.card main h3 {
+    font-size: 2.5rem;
+    font-weight: var(--title-weight);
+    margin: 8px 0px 0px;
+}
+
+.card main span {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    display: inline-block;
+}
+
 @media screen and (min-width: 768px) {
     .title-container h2 {
         font-size: 2rem;
