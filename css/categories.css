@@ -1,0 +1,34 @@
+.categories-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.categories-cards .card {
+    width: 312px;
+    height: 288px;
+    border-radius: 16px;
+    background-color: var(--background-secondary-color);
+
+    text-decoration: none;
+    color: var(--text-primary-color);
+    font-weight: var(--title-weight);
+    font-size: 1.5rem;
+    
+    box-sizing: border-box;
+    padding: 2.5rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.category-card img {
+    width: 62px;
+    height: auto;
+}
