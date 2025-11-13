@@ -28,9 +28,9 @@
     gap: 2rem;
 }
 
-.category-card img {
-    width: 62px;
-    height: auto;
+.categories-cards .card img {
+    height: 68px;
+    width: auto;
 }
 
 @media screen and (min-width: 1024px)
