@@ -10,6 +10,11 @@
     gap: 2rem;
 }
 
+.title-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
 .title-container h2 {
     font-size: 1.75rem;
     font-weight: var(--title-weight);
