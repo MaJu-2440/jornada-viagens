@@ -3,7 +3,9 @@
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
-    padding: 24px;
+    align-items: center;
+    padding: 0 24px;
+    margin: 0 auto;
 }
 
 .destinies-cards .card {
@@ -26,4 +28,31 @@
 .destinies-cards .card p {
     font-size: 1.25rem;
     font-weight: var(--text-weight);
+}
+
+    .destinies-image__tablet-desktop {
+        display: none;
+    }
+
+@media screen and (min-width: 768px) {
+    .destinies-cards {
+        padding: 0 60px;
+    }
+    
+    .destinies-cards .card img {
+        height: 452px;
+        width: 100%;
+    }
+
+    .destinies-cards .card {
+        max-width: 588px;
+    }
+
+    .destinies-image__mobile {
+        display: none;
+    }
+
+    .destinies-image__tablet-desktop {
+        display: block;
+    }
 }
