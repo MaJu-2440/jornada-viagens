@@ -1,0 +1,29 @@
+.destinies-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 24px;
+}
+
+.destinies-cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.destinies-cards .card img {
+    width: 100%;
+    height: 360px;
+}
+
+.destinies-cards .card h4 {
+    font-size: 1.75rem;
+    font-weight: var(--title-weight);
+}
+
+.destinies-cards .card p {
+    font-size: 1.25rem;
+    font-weight: var(--text-weight);
+}
