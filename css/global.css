@@ -42,5 +42,90 @@ html {
 }
 
 section:not(.hero) {
-    margin: 3rem auto;
+    margin: 0 auto 88px;
+    padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    text-align: center;
+    margin: 0 auto 32px;
+    width: 290px;
+}
+
+.title-container h2 {
+    font-size: 2rem;
+    font-weight: var(--title-weight);
+}
+
+.title-container hr {
+    width: 180px;
+    height: 4px;
+    border: none;
+    background-color: var(--accent-primary-color);
+    margin: 16px auto 0;
+}
+
+.section-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+} 
+
+.section-cards .card {
+    box-sizing: border-box;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+}
+
+.button {
+    width: 280px;
+    height: 64px;
+    color: var(--text-secondary-color);
+    font-weight: var(--title-weight);
+    font-size: 1.25rem;
+    background-color: var(--accent-secondary-color);
+    border-radius: 16px;
+
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 64px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .title-container {
+        width: auto;
+    }  
+  
+  .title-container h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .button:hover {
+        background-color: var(--accent-primary-color);
+    }
+  }
+
+  
+@media screen and (min-width: 1440px) {
+    .section-cards {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
