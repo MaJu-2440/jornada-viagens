@@ -17,18 +17,10 @@
     display: none;
 }
 
-@media screen and (min-width: 768px) {
-    .destinies {
-        padding: 0 60px;
-    }
-    
+@media screen and (min-width: 768px) {    
     .destinies .section-cards .card img {
         height: 452px;
         width: 100%;
-    }
-
-    .destinies .section-cards .card {
-        max-width: 588px;
     }
 
     .destinies-image__mobile {
@@ -37,5 +29,11 @@
 
     .destinies-image__tablet-desktop {
         display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .destinies .section-cards .card {
+        max-width: 568px;
     }
 }
