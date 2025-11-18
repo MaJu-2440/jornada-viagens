@@ -1,0 +1,99 @@
+section .payments {
+    flex-wrap: nowrap;
+}
+
+.payments .section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.payments .section-content__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.payments .section-content__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 254px 182px;
+    grid-template-areas: 
+        "gallery1 gallery2"
+        "gallery3 gallery3";
+    gap: 24px;
+}
+
+.image.gallery1 {
+    grid-area: gallery1;
+}
+
+.image.gallery2 {
+    grid-area: gallery2;
+}
+
+.image.gallery3 {
+    grid-area: gallery3;
+}
+
+.payments .section-content__images .image.gallery1 {
+    background: url(../assets/gallery1-mobile.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.payments .section-content__images .image.gallery2 {
+    background: url(../assets/gallery2-mobile.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.payments .section-content__images .image.gallery3 {
+    background: url(../assets/gallery3-mobile.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+    .payments .section-content__images .image.gallery1 {
+        background: url(../assets/gallery1-tablet.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .payments .section-content__images .image.gallery2 {
+        background: url(../assets/gallery2-tablet.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .payments .section-content__images .image.gallery3 {
+        background: url(../assets/gallery3-tablet.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .payments .section-container {
+        max-width: 790px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .payments .section-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .payments .section-content__images {
+        width: 790px;
+    }
+
+    .payments .section-content__text {
+        width: 400px;
+    }
+}
